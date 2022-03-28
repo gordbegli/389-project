@@ -1,0 +1,13 @@
+Motivation for your project (why this project? It’s okay if you just think its fun/funny, but you should justify why you think its cool). Imagine you are trying to convince someone to care about your project.
+
+Every year the pokemon company hires people who's job it is to create new and interesting pokemon. Ideally we want to live in a world where these people can do something more interesting with their lives, like being unemployed, so we want to automate their jobs. Just kidding! (not really), but we do actually want to make their lives easier. How about instead of creating pokemon from scratch, we use machine learning to automatically create pokemon, either for direct use, or as inspiration for the artists at the Pokemon company. That's our project!
+
+What type of model and training you are planning on using.
+
+We will plan on using a GAN model for this project. We plan on using Stocastic Gradient Decent for training and MSE for loss.
+
+The exact dataset that you will use to do this (it’s really important to have a dataset and best to find them
+early)
+
+The exact dataset that we are using the Kaggle complete Pokemon dataset. The link to this dataset is found here. https://www.kaggle.com/datasets/kvpratama/pokemon-images-dataset
+
