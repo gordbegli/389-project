@@ -11,3 +11,12 @@ early)
 
 The exact dataset that we are using the Kaggle complete Pokemon dataset. The link to this dataset is found here. https://www.kaggle.com/datasets/kvpratama/pokemon-images-dataset
 
+
+#################################################################################################################################
+Question 2
+
+Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks
+link - https://paperswithcode.com/paper/unsupervised-representation-learning-with-1
+
+This paper mentioned on the use of convolution layers in a traditional GANs and deconvolution on the generator to give a better creation of the immage.
+It show an example DCGANs model with an indepth explanation on convoluting a noise of 100X1 together with a denoted distribution z through 4 convolution layer and getting an ouput of 64x64x3.
