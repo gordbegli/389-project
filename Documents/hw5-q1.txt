@@ -1,22 +1,39 @@
 Motivation for your project (why this project? It’s okay if you just think its fun/funny, but you should justify why you think its cool). Imagine you are trying to convince someone to care about your project.
 
-Every year the pokemon company hires people who's job it is to create new and interesting pokemon. Ideally we want to live in a world where these people can do something more interesting with their lives, like being unemployed, so we want to automate their jobs. Just kidding! (not really), but we do actually want to make their lives easier. How about instead of creating pokemon from scratch, we use machine learning to automatically create pokemon, either for direct use, or as inspiration for the artists at the Pokemon company. That's our project!
+Every year the pokemon company hires people who's job it is to create new and interesting pokemon. Ideally we want to live in a world where these 
+people can do something more interesting with their lives, like being unemployed, so we want to automate their jobs. Just kidding! (not really), 
+but we do actually want to make their lives easier. 
+How about instead of creating pokemon from scratch, we use machine learning to automatically create pokemon, either for direct use, or as
+inspiration for the artists at the Pokemon company. That's our project! This is also an interesting part of machine learning coz we have seen
+how GANS can learn to created images with basic features (like how human faces has a baisc feature of eyes, nose, mouth, etc) but for something
+like pokemon with no boundaries on what it can be, we are curious how well GANs will be able to perfom with these.
 
 What type of model and training you are planning on using.
 
-We will plan on using a GAN model for this project. We plan on using Stocastic Gradient Decent for training and MSE for loss.
+We will plan on using a GAN model with convolution for this project. We plan on using Stocastic Gradient Decent for training and MSE for loss.
 
 The exact dataset that you will use to do this (it’s really important to have a dataset and best to find them
 early)
 
 The exact dataset that we are using the Kaggle complete Pokemon dataset. The link to this dataset is found here. https://www.kaggle.com/datasets/kvpratama/pokemon-images-dataset
+Since the size of our data set is very limited(there are about only 800 pokemons in total) we will be manipulating the color of pokemons and use
+them to expand our data set on training.
 
 
 #################################################################################################################################
 Question 2
 
 Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks
+
 link - https://paperswithcode.com/paper/unsupervised-representation-learning-with-1
 
 This paper mentioned on the use of convolution layers in a traditional GANs and deconvolution on the generator to give a better creation of the immage.
 It show an example DCGANs model with an indepth explanation on convoluting a noise of 100X1 together with a denoted distribution z through 4 convolution layer and getting an ouput of 64x64x3.
+It mentioned about how three specific changes they made to the CNN architecutre to
+further increase the GANs performance under unsupervised learning:
+1.Using all convolutional net to replace deterministic spatial pooling functions
+2.Eliminating fully connect layers on top of convolutional features
+3.Batch normalization
+
+
+
